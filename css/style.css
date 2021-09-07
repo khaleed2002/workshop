@@ -5,7 +5,7 @@ body{
     background-color: #af4643;
     font-family: 'Rubik', sans-serif;
     color:#fdfeff;
-     
+    z-index: -5;
 }
 .container{
     margin:0 auto;
@@ -38,6 +38,7 @@ body{
     height: 90vh;
     overflow: hidden;
     position: relative;
+    z-index: -2;
 }
 .header{
     width: 100%;
@@ -72,11 +73,11 @@ body{
     width: 44px;
     right: 7%;
     top: 16%;
-    transition: width 0.4s 0.4s,top 0.4s 0.4s,height 0.4s 0.4s,right 0.4s 0.4s;
-    -webkit-transition: width 0.4s 0.4s,top 0.4s 0.4s,height 0.4s 0.4s,right 0.4s 0.4s;
-    -moz-transition: width 0.4s 0.4s,top 0.4s 0.4s,height 0.4s 0.4s,right 0.4s 0.4s;
-    -ms-transition: width 0.4s 0.4s,top 0.4s 0.4s,height 0.4s 0.4s,right 0.4s 0.4s;
-    -o-transition: width 0.4s 0.4s,top 0.4s 0.4s,height 0.4s 0.4s,right 0.4s 0.4s;
+    transition: width 0.3s 0.3s linear,top 0.3s 0.3s linear,height 0.3s 0.3s linear,right 0.3s 0.3s linear;
+    -webkit-transition: width 0.3s 0.3s linear,top 0.3s 0.3s linear,height 0.3s 0.3s linear,right 0.3s 0.3s linear;
+    -moz-transition: width 0.3s 0.3s linear,top 0.3s 0.3s linear,height 0.3s 0.3s linear,right 0.3s 0.3s linear;
+    -ms-transition: width 0.3s 0.3s linear,top 0.3s 0.3s linear,height 0.3s 0.3s linear,right 0.3s 0.3s linear;
+    -o-transition: width 0.3s 0.3s linear,top 0.3s 0.3s linear,height 0.3s 0.3s linear,right 0.3s 0.3s linear;
 }
 i{
     position: absolute;
@@ -96,11 +97,11 @@ i:hover{
 .links{
     background-color:#fdfeff;
     opacity: 0;
-    transition: background-color 2s,opacity 0.4s 0.4s;
-    -webkit-transition: background-color 2s,opacity 0.4s 0.4s;
-    -moz-transition: background-color 2s,opacity 0.4s 0.4s;
-    -ms-transition: background-color 2s,opacity 0.4s 0.4s;
-    -o-transition: background-color 2s,opacity 0.4s 0.4s;
+    transition: background-color 2s linear,opacity 0.3s 0.3s linear;
+    -webkit-transition: background-color 2s linear,opacity 0.3s 0.3s linear;
+    -moz-transition: background-color 2s linear,opacity 0.3s 0.3s linear;
+    -ms-transition: background-color 2s linear,opacity 0.3s 0.3s linear;
+    -o-transition: background-color 2s linear,opacity 0.3s 0.3s linear;
     border-radius: 6%;
     -webkit-border-radius: 6%;
     -moz-border-radius: 6%;
@@ -112,7 +113,6 @@ i:hover{
 }
 
 a{
-    
     margin-top: 4%;
     margin-right: 20%;
     margin-left: 6%;
@@ -120,11 +120,11 @@ a{
     text-transform: capitalize;
     display: block;
     color:hsl(203deg 66% 7%);
-    transition: opacity  0.4s,margin 0.4s;
-    -webkit-transition: opacity  0.4s,margin 0.4s,position 0.4s;
-    -moz-transition: opacity  0.4s,margin 0.4s;
-    -ms-transition: opacity  0.4s,margin 0.4s;
-    -o-transition: opacity  0.4s,margin 0.4s;
+    transition: opacity  0.3s linear,margin 0.3s linear;
+    -webkit-transition: opacity  0.3s linear,margin 0.3s linear;
+    -moz-transition: opacity  0.3s linear,margin 0.3s linear;
+    -ms-transition: opacity  0.3s linear,margin 0.3s linear;
+    -o-transition: opacity  0.3s linear,margin 0.3s linear;
     position: relative;
     padding: 2%;
     margin: 10% 10%;
@@ -137,12 +137,11 @@ a:not(a:last-child):after{
     left: 0;
     height: 1px;
     border-bottom:1.5px solid black;
-    transition: margin 0.4s;
-    -webkit-transition: margin 0.4s;
-    -moz-transition: margin 0.4s;
-    -ms-transition: margin 0.4s;
-    -o-transition: margin 0.4s;
-    
+    transition: margin 0.3s linear;
+    -webkit-transition: margin 0.3s linear;
+    -moz-transition: margin 0.3s linear;
+    -ms-transition: margin 0.3s linear;
+    -o-transition: margin 0.3s linear;
 }
 a:first-child{
     padding-top:8%;
@@ -172,11 +171,11 @@ a:focus
     margin-left: 81%;
     position: relative;
     opacity: 1;
-    transition: visibility 0.4s,opacity 0.4s;
-    -webkit-transition: visibility 0.4s,opacity 0.4s;
-    -moz-transition: visibility 0.4s,opacity 0.4s;
-    -ms-transition: visibility 0.4s,opacity 0.4s;
-    -o-transition: visibility 0.4s,opacity 0.4s;
+    transition: visibility 0.3s linear,opacity 0.3s linear,position 0s 0.3s linear;
+    -webkit-transition: visibility 0.3s linear,opacity 0.3s linear,position 0s 0.3s linear;
+    -moz-transition: visibility 0.3s linear,opacity 0.3s linear,position 0s 0.3s linear;
+    -ms-transition: visibility 0.3s linear,opacity 0.3s linear,position 0s 0.3s linear;
+    -o-transition: visibility 0.3s linear,opacity 0.3s linear,position 0s 0.3s linear;
 }
 .three::before{
     content: "";
@@ -190,11 +189,11 @@ a:focus
     -ms-border-radius: 15%;
     -o-border-radius: 15%;
     top: 156%;
-    transition: width 0.4s;
-    -webkit-transition: width 0.4s;
-    -moz-transition: width 0.4s;
-    -ms-transition: width 0.4s;
-    -o-transition: width 200ms;
+    transition: width 0.3s linear;
+    -webkit-transition: width 0.3s linear;
+    -moz-transition: width 0.3s linear;
+    -ms-transition: width 0.3s linear;
+    -o-transition: width 0.3s linear;
 }
 .three::after{
     content: "";
@@ -246,37 +245,62 @@ h1{
     letter-spacing: 1.6px;
     z-index: 5;
 }
-
-/* icon */
-.icon{
-    width:clamp(8rem,10vw,10rem);
-    height: clamp(8rem,10vh,10rem);
-    border: 1.5em solid #ac3d36;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    padding: 30%;
-}
-.icon2{
-    width: clamp(12rem,15vw,15rem);
-    height: clamp(12rem,15vh,15rem);
-    border: 1.7em solid #ac3960;
-    border-radius: 50%;
-    position: relative;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+/* circles */
+.outer-circle {
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 40%;
-    bottom: -30%;
-    left: -53%;
-    z-index: 2;
+    align-items: center;
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    top: -7%;
+    left: 27%;
+    border: 6px solid #0c1a25;
+    z-index: -2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: rotate 2.9s 0s linear infinite;
+    -webkit-animation: rotate 2s 0s linear infinite;
+    animation-fill-mode:both;
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+.inner-circle { 
+    width: 35vw;
+    height: 35vw;
+    position: absolute;
+    
+    border: 13px solid #0c1a25;
+    border-right-color: transparent;
+    z-index: -2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.inner-circle2 {
+    width: 28vw;
+    height: 28vw;
+    position: absolute;
+    border: 14px solid #0c1a25;
+    border-left-color: transparent;
+    z-index: -2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 .points2{
     font-size: 2rem;
