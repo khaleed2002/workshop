@@ -38,7 +38,7 @@ body{
     height: 90vh;
     overflow: hidden;
     position: relative;
-    z-index: -2;
+    z-index: 2;
 }
 .header{
     width: 100%;
@@ -148,6 +148,7 @@ a:first-child{
 }
 a:last-child{
     padding-bottom: 8%;
+    z-index: 5;
 }
 a:hover,
 a:focus
@@ -243,7 +244,7 @@ h1{
     font-weight: 600;
     word-spacing: 7px;
     letter-spacing: 1.6px;
-    z-index: 5;
+    z-index: 2;
 }
 /* circles */
 .outer-circle {
@@ -349,4 +350,21 @@ h1{
     position: absolute;
     font-size: 2rem;
     left: 8%;
+}
+button{
+    cursor: pointer;
+    color: #0c1a25;
+    background-color: #fdfeff;
+    position: absolute;
+    padding: 1.5%;
+    top: 83%;
+    right: 7%;
+    border: 3px rgb(255 20 226 / 62%) inset;
+    border-radius: 20%;
+    z-index: 1;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+    font-family: 'Rubik';
 }
